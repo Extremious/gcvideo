@@ -1,5 +1,8 @@
 # GCVideo #
 
+## This fork adds 4 extra settings to the OSD menu.
+![OSD Settings menu](Firmware/doc/osd.png)
+ 
 GCVideo is a small series of FPGA boards and VHDL projects
 capable of converting the
 GameCube's Digital Video port signals to standard video signals
