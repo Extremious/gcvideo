@@ -50,7 +50,7 @@ typedef struct {
 
 /* --- Scanline RAM --- */
 
-#define SCANLINERAM_ENTRIES (256 * 4)
+#define SCANLINERAM_ENTRIES (256 * 3)
 
 typedef struct {
   // profile 0 is unused (scanlines hardware-disabled)

@@ -44,8 +44,8 @@ typedef enum {
   VALTYPE_SBYTE_127,    // -128 to 127
   VALTYPE_FIXPOINT1,    // 0.00 to 1.00, scaled by 256
   VALTYPE_FIXPOINT2,    // 0.00 to 1.992 (255), scaled by 128
-  VALTYPE_SLPROFILEOFF, // 0 to 3 shown as Off, 1 to 3
-  VALTYPE_SLPROFILE,    // 1 to 3
+  VALTYPE_SLPROFILEOFF, // 0 to 2 shown as Off, 1, 2
+  VALTYPE_SLPROFILE,    // 1, 2
   VALTYPE_SLINDEX,      // 16 to 235
   VALTYPE_COLORMODE,    // 0 to 3 shown as RGBF, RGBL, Y444, Y422
   VALTYPE_RESBOX_X,     // 0 to 33

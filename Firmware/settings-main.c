@@ -411,14 +411,6 @@ void settings_init(void) {
   SCANLINERAM->profiles[2 * 256 + 251] = scanline_strength;
   SCANLINERAM->profiles[2 * 256 + 252] = scanline_hybrid;
   update_scanlines();
-
-  scanline_selected_profile = 3;
-  scanline_strength = 64;
-  scanline_hybrid   = 160;
-  SCANLINERAM->profiles[3 * 256 + 250] = 0;
-  SCANLINERAM->profiles[3 * 256 + 251] = scanline_strength;
-  SCANLINERAM->profiles[3 * 256 + 252] = scanline_hybrid;
-  update_scanlines();
 }
 
 void settings_commit(void) {
