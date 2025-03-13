@@ -106,6 +106,8 @@ uint16_t     scanline_strength;
 uint16_t     scanline_hybrid;
 minibool     scanline_custom;
 minibool     crop_486_to_480;
+volatile uint32_t     exSP = 999999999;
+volatile uint32_t     reSP = 999999999;
 
 static uint16_t current_setid;
 

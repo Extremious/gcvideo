@@ -80,6 +80,13 @@ void screen_idle(void) {
       return;
 
     /* check for video mode change */
+    if (pad_buttons & PAD_Z) {
+      pad_clear(PAD_Z);
+
+      osd_clrscr();
+      osd_gotoxy(1, 1);
+      printf("%d %d ", exSP, reSP);
+    }
     if (pad_buttons & PAD_VIDEOCHANGE) {
       pad_clear(PAD_VIDEOCHANGE);
 

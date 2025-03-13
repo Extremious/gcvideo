@@ -61,6 +61,12 @@ void irq_handler(void) {
       IRRX->pulsedata = 0;
     }
   }
+#ifdef MODULE_main
+    void* newSP = NULL;
+
+    if((uint32_t)&newSP < exSP)
+      exSP = (uint32_t)&newSP;
+#endif
 }
 
 /* --- main --- */

@@ -67,6 +67,8 @@ extern uint16_t     scanline_strength;
 extern uint16_t     scanline_hybrid;
 extern minibool     scanline_custom;
 extern minibool     crop_486_to_480;
+volatile extern uint32_t     exSP;
+volatile extern uint32_t     reSP;
 
 void set_all_modes(uint32_t flag, bool state);
 void update_scanlines(void);

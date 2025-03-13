@@ -31,6 +31,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+#include <stddef.h>
 #include "infoframe.h"
 #include "pad.h"
 #include "portdefs.h"
@@ -241,4 +242,11 @@ void update_reblanker(void) {
 
   VIDEOIF->vsync_start = vsync_start;
   VIDEOIF->vsync_end   = vsync_end;
+
+#ifdef MODULE_main
+  void* newSP = NULL;
+
+  if((uint32_t)&newSP < reSP)
+    reSP = (uint32_t)&newSP;
+#endif
 }
